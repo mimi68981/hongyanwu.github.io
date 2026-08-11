@@ -1,0 +1,433 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Hongyan Wu · Personal Homepage</title>
+  <meta name="description" content="Hongyan Wu — Personal academic homepage. Research on Natural Language Processing: text error correction, LLM safety, retrieval-augmented generation, and emotional support conversation." />
+  <link rel="icon" href="data:image/svg+xml,<svg xmlns=%22http://www.w3.org/2000/svg%22 viewBox=%220 0 100 100%22><text y=%22.9em%22 font-size=%2290%22>🎓</text></svg>" />
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&family=JetBrains+Mono:wght@400;500&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+  <!-- Reading progress bar -->
+  <div id="progress-bar"></div>
+
+  <!-- Top Navigation -->
+  <header class="site-header">
+    <div class="header-inner">
+      <nav class="site-nav" aria-label="Primary">
+        <ul>
+          <li><a href="#home" class="nav-link">Home</a></li>
+          <li><a href="#publications" class="nav-link">Publications</a></li>
+          <li><a href="#projects" class="nav-link">Projects</a></li>
+          <li><a href="#work-experience" class="nav-link">Work Experience</a></li>
+          <li><a href="#honors" class="nav-link">Honors</a></li>
+          <li><a href="#skills" class="nav-link">Skills</a></li>
+        </ul>
+      </nav>
+      <div class="header-actions">
+        <button id="theme-toggle" aria-label="Toggle theme" title="Toggle light / dark theme">
+          <svg class="icon-sun" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" width="18" height="18" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="5"/><line x1="12" y1="1" x2="12" y2="3"/><line x1="12" y1="21" x2="12" y2="23"/><line x1="4.22" y1="4.22" x2="5.64" y2="5.64"/><line x1="18.36" y1="18.36" x2="19.78" y2="19.78"/><line x1="1" y1="12" x2="3" y2="12"/><line x1="21" y1="12" x2="23" y2="12"/><line x1="4.22" y1="19.78" x2="5.64" y2="18.36"/><line x1="18.36" y1="5.64" x2="19.78" y2="4.22"/></svg>
+          <svg class="icon-moon" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" width="18" height="18" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M21 12.79A9 9 0 1 1 11.21 3 7 7 0 0 0 21 12.79z"/></svg>
+        </button>
+        <button id="menu-toggle" aria-label="Menu">
+          <span></span><span></span><span></span>
+        </button>
+      </div>
+    </div>
+  </header>
+
+  <!-- Main Layout: sidebar + content -->
+  <div class="layout" id="home">
+    <!-- ===== Left Profile Sidebar ===== -->
+    <aside class="sidebar" aria-label="Profile">
+      <div class="sidebar-inner">
+        <div class="profile-avatar">
+          <img src="photo.jpg" alt="Portrait of Hongyan Wu" />
+        </div>
+        <h1 class="profile-name">Hongyan Wu</h1>
+
+        <ul class="profile-list">
+          <li>
+            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" width="16" height="16" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="10" r="3"/><path d="M12 2a8 8 0 0 0-8 8c0 5.4 8 12 8 12s8-6.6 8-12a8 8 0 0 0-8-8z"/></svg>
+            <span>China</span>
+          </li>
+          <li>
+            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" width="16" height="16" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M3 21h18M5 21V7l7-4 7 4v14M9 9h.01M13 9h.01M9 13h.01M13 13h.01M9 17h.01M13 17h.01"/></svg>
+            <span>NUDT (M.S. student)</span>
+          </li>
+          <li>
+            <a href="mailto:why19129230415@163.com">
+              <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" width="16" height="16" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"/><polyline points="22,6 12,13 2,6"/></svg>
+              <span>why19129230415@163.com</span>
+            </a>
+          </li>
+          <li>
+            <a href="https://www.semanticscholar.org/author/Hongyan-Wu/2238149476" target="_blank" rel="noopener noreferrer" title="Semantic Scholar Profile">
+              <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" width="16" height="16" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M4 19.5A2.5 2.5 0 0 1 6.5 17H20"/><path d="M6.5 2H20v20H6.5A2.5 2.5 0 0 1 4 19.5v-15A2.5 2.5 0 0 1 6.5 2z"/><line x1="8" y1="7" x2="16" y2="7"/><line x1="8" y1="11" x2="16" y2="11"/></svg>
+              <span>Semantic Scholar</span>
+            </a>
+          </li>
+        </ul>
+      </div>
+    </aside>
+
+    <!-- ===== Main Content ===== -->
+    <main class="content">
+
+      <!-- About Me -->
+      <section id="about" class="section section-first">
+        <div class="section-head">
+          <h2 class="section-title">About Me</h2>
+        </div>
+        <div class="prose">
+          <p>
+            I'm a master's student at the <strong>National University of Defense Technology (NUDT)</strong>,
+            affiliated with the <em>Parallel and Distributed Processing Laboratory</em>,
+            advised by Professor<strong>Zhen Huang</strong> and Associate Professor<strong>Zhiliang Tian</strong>.
+            I received my B.E. in Computer Science and Technology from
+            <strong>Guangdong University of Foreign Studies (GDUFS)</strong>,
+            where I was advised by Professor<strong>Shengyi Jiang</strong>.
+            I've been fortunate to intern at <em>Tencent WXG<em>.
+          </p>
+          <p class="prose-plain">
+            My research focuses on <strong>Natural Language Processing</strong>, spanning several key areas:
+          </p>
+          <ul class="research-bullets">
+            <li><strong>Text Error Correction</strong>: including chinese spelling check, grammatical error correction and semantic error recognition;</li>
+            <li><strong>LLM Safety</strong>: investigating safety alignment and adversarial defenses for large language models;</li>
+            <li><strong>Retrieval-Augmented Generation (RAG)</strong>: enhancing LLM generation quality and factuality through retrieval mechanisms;</li>
+            <li><strong>Emotional Support Conversation</strong>: building empathetic and supportive conversational AI systems.</li>
+          </ul>
+          <p class="prose">
+            I have published papers as first/student-first author at CCF-A/B conferences and journals,
+            including <em>ACL</em>, <em>TIFS</em>, <em>TASLP</em>, <em>COLING</em>, <em>ESWA</em>
+            and <em>Journal of Computer Science and Technology</em>.
+            I have been honored with the <strong>National Scholarship</strong>,
+            the <strong>President's Medal</strong>,
+            and the <strong>China University Student Self-Reliance Star Award</strong>, among others.
+          </p>
+          <p class="prose-em">
+            I am open to opportunities across academia and industry — feel free to get in touch!
+          </p>
+        </div>
+      </section>
+
+      <!-- Research Interests -->
+      <section id="research" class="section">
+        <div class="section-head">
+          <h2 class="section-title section-title-inline">Research Interests:</h2>
+        </div>
+        <p class="research-line">Text Error Correction, LLM Safety, Retrieval-Augmented Generation, Emotional Support Conversation, Controllable Text Generation</p>
+      </section>
+
+      <!-- Education -->
+      <section id="education" class="section">
+        <div class="section-head">
+          <h2 class="section-title">Education</h2>
+        </div>
+        <ul class="entry-list">
+          <li>Sep. 2024 — Jun. 2027, National University of Defense Technology (NUDT), M.S. in Computer Science and Technology (GPA 3.43/4.00)</li>
+          <li>Sep. 2020 — Jun. 2024, Guangdong University of Foreign Studies (GDUFS), B.E. in Computer Science and Technology (GPA 3.94/4.00, recommended for admission to NUDT)</li>
+        </ul>
+      </section>
+
+      <!-- Publications -->
+      <section id="publications" class="section">
+        <div class="section-head">
+          <h2 class="section-title">Publications</h2>
+        </div>
+
+        <h3 class="subsection-title">2026</h3>
+        <ol class="pub-list">
+          <li class="pub-item">
+            <div class="pub-year">2026</div>
+            <div class="pub-body">
+              <h4 class="pub-title"><a href="#">LLM-Driven MCTS for Conditional Story Generation via Logic-Guided Evidence Tree Optimization</a></h4>
+              <p class="pub-meta"><strong>Hongyan Wu</strong>, Zhiliang Tian, Zhen Huang, Nankai Lin, Yiping Song, Zhihua Wen, Menglong Lu, Feng Liu, and Dongsheng Li. <em>IEEE/ACM Transactions on Audio, Speech, and Language Processing (IEEE TASLP)</em>, 2026.
+                <span class="badge">CCF B</span><span class="badge">SCI Q2</span>
+              </p>
+            </div>
+          </li>
+          <li class="pub-item">
+            <div class="pub-year">2026</div>
+            <div class="pub-body">
+              <h4 class="pub-title"><a href="#">Emotion Trajectory-aware Retrieval for Markov-driven Emotion Anticipation in LLM-based Emotional Support Conversation</a></h4>
+              <p class="pub-meta"><strong>Hongyan Wu</strong>, Zhiliang Tian, Zhen Huang, Tengyue Hu, Linbo Qiao, Yifu Gao, Feng Liu, and Dongsheng Li. <em>Findings of the Association for Computational Linguistics (ACL Findings)</em>, 2026.
+                <span class="badge">CCF A</span>
+              </p>
+            </div>
+          </li>
+          <li class="pub-item">
+            <div class="pub-year">2026</div>
+            <div class="pub-body">
+              <h4 class="pub-title"><a href="#">Advancing LLMs for Chinese Semantic Error Correction: Example Selection and Re-scoring</a></h4>
+              <p class="pub-meta"><strong>Hongyan Wu</strong>, Nankai Lin, Shengyi Jiang, and Lianxi Wang. <em>Expert Systems with Applications (ESWA)</em>, 2026.
+                <span class="badge">CCF C</span><span class="badge">SCI Q1</span>
+              </p>
+            </div>
+          </li>
+          <li class="pub-item">
+            <div class="pub-year">2026</div>
+            <div class="pub-body">
+              <h4 class="pub-title"><a href="#">Disguise While Defense: Avoid Refusal Responses in LLM's Defense via a Multi-agent Attacker-Disguiser Game</a></h4>
+              <p class="pub-meta">Qianqiao Xu, Zhiliang Tian, <strong>Hongyan Wu</strong>, Zhen Huang, Yiping Song, Feng Liu, and Dongsheng Li. <em>IEEE Transactions on Information Forensics and Security (IEEE TIFS)</em>, 2026.
+                <span class="badge">CCF A</span><span class="badge">SCI Q1</span>
+              </p>
+            </div>
+          </li>
+        </ol>
+
+        <h3 class="subsection-title">2025</h3>
+        <ol class="pub-list">
+          <li class="pub-item">
+            <div class="pub-year">2025</div>
+            <div class="pub-body">
+              <h4 class="pub-title"><a href="#">Pseudo-label Data Construction Method and Syntax-enhanced Model for Chinese Semantic Error Recognition</a></h4>
+              <p class="pub-meta"><strong>Hongyan Wu</strong>, Nankai Lin, Shengyi Jiang, Lianxi Wang, and Aimin Yang. <em>Proceedings of the 31st International Conference on Computational Linguistics (COLING)</em>, 2025.
+                <span class="badge">CCF B</span>
+              </p>
+            </div>
+          </li>
+          <li class="pub-item">
+            <div class="pub-year">2025</div>
+            <div class="pub-body">
+              <h4 class="pub-title"><a href="#">DISCERN: Chain-of-Thought-Augmented Syntactic-based In-Context Learning for Chinese Semantic Error Detection</a></h4>
+              <p class="pub-meta">Bowen Ruan, <strong>Hongyan Wu</strong>, Yi Han, Shengyi Jiang, Lianxi Wang, and Nankai Lin. <em>Data Intelligence (Data Intell.)</em>, 2025.
+                <span class="badge">SCI Q2</span>
+              </p>
+            </div>
+          </li>
+          <li class="pub-item">
+            <div class="pub-year">2025</div>
+            <div class="pub-body">
+              <h4 class="pub-title"><a href="#">Emotional Classification in COVID-19: Analyzing Chinese Microblogs with Domain-Adapted Contrastive Learning</a></h4>
+              <p class="pub-meta">Nankai Lin, <strong>Hongyan Wu</strong>, Aimin Yang, and Lianxi Wang. <em>Applied Soft Computing (Appl. Soft Comput.)</em>, 2025.
+                <span class="badge">SCI Q1</span>
+              </p>
+            </div>
+          </li>
+          <li class="pub-item">
+            <div class="pub-year">2025</div>
+            <div class="pub-body">
+              <h4 class="pub-title"><a href="#">A Novel Curriculum Learning Framework for Multi-label Emotion Classification</a></h4>
+              <p class="pub-meta">Nankai Lin, <strong>Hongyan Wu</strong>, Peijian Zeng, Qifeng Bai, Dong Zhou, and Aimin Yang. <em>The Computer Journal (Comput. J.)</em>, 2025.
+                <span class="badge">CCF B</span><span class="badge">SCI Q4</span>
+              </p>
+            </div>
+          </li>
+          <li class="pub-item">
+            <div class="pub-year">2025</div>
+            <div class="pub-body">
+              <h4 class="pub-title"><a href="#">Jailbreaking? One Step Is Enough!</a></h4>
+              <p class="pub-meta">Weixiong Zheng, Peijian Zeng, Yiwei Li, <strong>Hongyan Wu</strong>, Nankai Lin, Junhao Chen, Aimin Yang, and Yongmei Zhou. <em>Proceedings of the 63rd Annual Meeting of the Association for Computational Linguistics (ACL)</em>, 2025.
+                <span class="badge">CCF A</span>
+              </p>
+            </div>
+          </li>
+        </ol>
+
+        <h3 class="subsection-title">2024</h3>
+        <ol class="pub-list">
+          <li class="pub-item">
+            <div class="pub-year">2024</div>
+            <div class="pub-body">
+              <h4 class="pub-title"><a href="#">IndoCL: Benchmarking Indonesian Language Development Assessment</a></h4>
+              <p class="pub-meta">Nankai Lin, <strong>Hongyan Wu</strong>, Weixiong Zheng, Xingming Liao, Shengyi Jiang, Aimin Yang, and Lixian Xiao. <em>Proceedings of the 2024 Conference on Empirical Methods in Natural Language Processing (EMNLP)</em>, 2024.
+                <span class="badge">CCF B</span>
+              </p>
+            </div>
+          </li>
+          <li class="pub-item">
+            <div class="pub-year">2024</div>
+            <div class="pub-body">
+              <h4 class="pub-title"><a href="#">A Chinese Spelling Check Framework Based on Reverse Contrastive Learning</a></h4>
+              <p class="pub-meta">Nankai Lin, <strong>Hongyan Wu</strong>, Sihui Fu, Shengyi Jiang, and Aimin Yang. <em>Journal of Computer Science and Technology (JCST)</em>, 2024.
+                <span class="badge">CCF B</span><span class="badge">SCI Q3</span>
+              </p>
+            </div>
+          </li>
+        </ol>
+      </section>
+
+      <!-- Patents -->
+      <section id="patents" class="section">
+        <div class="section-head">
+          <h2 class="section-title">Patents</h2>
+        </div>
+        <ol class="patent-list">
+          <li>
+            <span class="pat-no">Invention Patent</span>
+            <div class="pat-body">
+              <h4>一种中文语义错误识别方法及装置（依存句法增强微调预训练语言模型）</h4>
+              <p><span class="pat-status">Granted</span></p>
+            </div>
+          </li>
+          <li>
+            <span class="pat-no">Invention Patent</span>
+            <div class="pat-body">
+              <h4>一种基于反向对比学习的中文拼写纠错方法及系统</h4>
+              <p><span class="pat-status">Granted</span></p>
+            </div>
+          </li>
+          <li>
+            <span class="pat-no">Invention Patent</span>
+            <div class="pat-body">
+              <h4>一种基于多智能体博弈的大语言模型安全防御方法</h4>
+              <p><span class="pat-status">Granted</span></p>
+            </div>
+          </li>
+        </ol>
+      </section>
+
+      <!-- Projects -->
+      <section id="projects" class="section">
+        <div class="section-head">
+          <h2 class="section-title">Projects</h2>
+        </div>
+        <ol class="project-list">
+          <li>
+            <div class="proj-title">Retrieval-Augmented Generation for Large Language Models</div>
+            <div class="proj-meta">
+              <span class="proj-tag proj-tag-primary">Research Project</span>
+              <span class="work-date">Sep. 2024 — Present</span>
+            </div>
+            <div class="prose" style="margin-top:.4rem">
+              <p><strong>Background:</strong> (1) Multi-turn retrieval-based conditional story generation ignores inter-evidence dependencies, often sufferring from logical inconsistency and topic drift; (2) Existing emotional support dialogue systems focus only on single-turn emotion matching and overlook the trajectory of emotional shifts across multiple turns.</p>
+              <p><strong>Contributions:</strong> (1) Built a key–value retrieval repository of "condition / content" pairs and proposed an <em>MCTS-based multi-turn evidence-planning</em> framework that leverages a logic discriminator to search for optimal evidence paths in the evidence tree, balancing topic controllability and plot coherence. (2) Proposed an emotion-trajectory retrieval-augmented <em>Markov emotion transition</em> model to track dynamic emotional shifts in multi-turn dialogue, combined with <em>Q-learning</em> to adaptively select user-specific emotional support strategies.</p>
+              <p><strong>Outcomes:</strong> Published as first-author at TASLP (CCF B) and ACL Findings 2026 (CCF A).</p>
+            </div>
+          </li>
+          <li>
+            <div class="proj-title">LLM Safety</div>
+            <div class="proj-meta">
+              <span class="proj-tag proj-tag-primary">Research Project</span>
+              <span class="work-date">Dec. 2023 — Apr. 2025</span>
+            </div>
+            <div class="prose" style="margin-top:.4rem">
+              <p><strong>Background:</strong> Current LLM jailbreak defenses mostly rely on direct refusal, which can be easily identified and exploited by attackers to strengthen future attacks.</p>
+              <p><strong>Contributions:</strong> The first work to defend against jailbreak attacks by <em>disguising the defensive intent</em>. Proposed an LLM-based <em>multi-stage multi-agent game</em> framework in which an attacker and a disguiser iteratively select in-context examples and strategies via adversarial reinforcement learning, converging toward a Nash equilibrium. The disguiser ultimately produces responses that are safe and relevant to the attack query while hiding the defense intent and revealing no harmful information.</p>
+              <p><strong>Outcomes:</strong> Published as student-second-author in TIFS (CCF A).</p>
+            </div>
+          </li>
+          <li>
+            <div class="proj-title">Text Error Correction</div>
+            <div class="proj-meta">
+              <span class="proj-tag proj-tag-primary">Research Project</span>
+              <span class="work-date">Dec. 2022 — Jun. 2024</span>
+            </div>
+            <div class="prose" style="margin-top:.4rem">
+              <p><strong>Background:</strong> (1)Chinese semantic errors are subtle and hard to annotate, with limited labeled data; Existing syntax-augmented models require training from scratch at high cost; (2) Existing spelling correction models do not fully exploit the discriminative signals between phonologically and visually confusable characters.</p>
+              <p><strong>Contributions:</strong> (1) Proposed a <em>pseudo-label data construction</em> method for Chinese semantic error recognition, along with a method that fuses <em>dependency-syntax</em> information into pre-trained models only <em>during fine-tuning</em>. (2) Proposed <em>reverse contrastive learning</em> that maximizes the distance between anchor characters and easily-confusable negative samples.</p>
+              <p><strong>Outcomes:</strong> Published as first-author at COLING 2025 (CCF B) and student-first-author at JCST (CCF B).</p>
+            </div>
+          </li>
+        </ol>
+      </section>
+
+      <!-- Work Experience -->
+      <section id="work-experience" class="section">
+        <div class="section-head">
+          <h2 class="section-title">Work Experience</h2>
+        </div>
+        <ul class="work-list">
+          <li class="work-item">
+            <div class="work-head">
+              <span class="work-org">Applied Research Intern, Tencent WXG</span>
+              <span class="work-date">May.2026 — Present</span>
+            </div>
+            <p class="work-lead">
+              Led the end-to-end design and implementation of <strong>"People Also Ask (大家都在问)"</strong>,
+              an LLM-powered QA module on product detail pages that surfaces high-frequency user questions with sourced answers.
+            </p>
+            <ul class="work-bullets">
+              <li>
+                <strong>Phase 1 — QA Mining:</strong> Built an SOP pipeline over <strong>~140k products</strong> and
+                <strong>6 months of CS dialogues</strong>. Used LLM-enhanced embeddings for DBSCAN clustering, with
+                intent-label hard-cluster fallback to identify recurring questions, paired with source-grounded and
+                ABSA-based review mining for answers. Answer correctness:
+                <strong>53.22% → 93.23% (+35.82pp)</strong>; per-product recall:
+                <strong>3.45 → 13.33 questions (+286%)</strong>; ≥3-QA coverage:
+                <strong>50% → 99%</strong>.
+              </li>
+              <li>
+                <strong>Cyclic Update:</strong> Designed a monthly LLM-driven pipeline for question deduplication and
+                fact-conflict verification, enabling safe minimum-diff incremental updates.
+              </li>
+              <li>
+                <strong>Phase 2 — Cold-Start Expansion:</strong> Built a few-shot generative pipeline via L4-category
+                QA migration, expanding coverage from <strong>5.7% → ~68%</strong> (~100k products, ~10× lift), with
+                an automated evaluation framework to guide category rollout.
+              </li>
+              <li>
+                <strong>Model Consolidation:</strong> Fine-tuned <em>Qwen2.5-14B-Instruct</em> on pipeline outputs
+                to replace the hand-crafted SOP with a lightweight, maintainable model-based service.
+              </li>
+            </ul>
+          </li>
+
+          <li class="work-item">
+            <div class="work-head">
+              <span class="work-org">NLP Intern, Whale Cloud.</span>
+              <span class="work-date">Apr. 2024 – Aug. 2024</span>
+            </div>
+            <p class="work-lead">
+              Targeted spelling errors in mobile ChatBI user inputs in vertical domains.
+            </p>
+            <ul class="work-bullets">
+              <li>
+                Collected <strong>10,022 human-annotated samples</strong> and
+                <strong>175,151 auto-generated samples</strong>; comparative analysis revealed significant differences
+                from SIGHAN in text formality, input method, and user population.
+              </li>
+              <li>
+                Introduced a <strong>bi-directional KL-divergence</strong> constraint during training and an
+                <strong>iterative inference strategy</strong> to mitigate over-correction, achieving approximately
+                <strong>1.0%–4.9%</strong> gains on both the in-house dataset and SIGHAN benchmarks.
+              </li>
+            </ul>
+          </li>
+        </ul>
+      </section>
+
+      <!-- Honors and Awards -->
+      <section id="honors" class="section">
+        <div class="section-head">
+          <h2 class="section-title">Honors and Awards</h2>
+        </div>
+        <ul class="honor-list">
+          <li><em class="honor-date">2024.12</em> The Stars of Self-improvement of Chinese College Students.</li>
+          <li><em class="honor-date">2023.10</em> President's Medal.</li>
+          <li><em class="honor-date">2023.09</em> National Scholarship.</li>
+          <li><em class="honor-date">2022.09</em> National Encouragement Scholarship.</li>
+        </ul>
+      </section>
+
+      <!-- Skills -->
+      <section id="skills" class="section section-final">
+        <div class="section-head">
+          <h2 class="section-title">Skills</h2>
+        </div>
+        <div class="prose">
+          <p><strong>LLM Technologies:</strong> Familiar with RAG; experienced with Agent development; familiar with mainstream LLM architectures including Transformer, BERT and DeepSeek; able to fine-tune large language models using <em>LMFlow</em> and <em>Llama-factory</em>; familiar with mainstream RL algorithms such as DPO, PPO and GRPO.</p>
+          <p><strong>Engineering:</strong> Python / PyTorch / HuggingFace Transformers; LangChain application development; data acquisition and automated analytics pipeline construction.</p>
+        </div>
+      </section>
+
+      <footer class="site-footer">
+        <p>© <span id="year"></span> Hongyan Wu · Layout inspired by <a href="https://academicpages.github.io/" target="_blank" rel="noopener">Academic Pages</a>, built with plain HTML / CSS / JS.</p>
+        <p class="footer-sub">Last updated <span id="last-updated"></span></p>
+      </footer>
+    </main>
+  </div>
+
+  <button id="back-top" aria-label="Back to top" title="Back to top">
+    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" width="18" height="18" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round"><polyline points="18 15 12 9 6 15"/></svg>
+  </button>
+
+  <script src="script.js"></script>
+</body>
+</html>
